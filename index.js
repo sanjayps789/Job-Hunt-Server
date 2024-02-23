@@ -22,7 +22,7 @@ jobServer.use(router)
 jobServer.use('/uploads',express.static('./uploads'))
 
 
-const PORT = 5000
+const PORT = 5000 || process.env.PORT
 //to host jobserver : localhost:5000
 jobServer.listen(PORT,()=>{
     console.log(`Job Server Started at port: ${PORT}`);
