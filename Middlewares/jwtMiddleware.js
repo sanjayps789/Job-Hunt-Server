@@ -20,5 +20,5 @@ const jwtMiddleware = (req,res,next) =>{
         res.status(401).json("Access Denied... Please Login!!!")
     }
 }
-
+    
 module.exports = jwtMiddleware
