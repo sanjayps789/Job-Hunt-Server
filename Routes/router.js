@@ -28,7 +28,7 @@ router.put('/job/edit/:jid',jwtMiddleware,multerConfig.single('jobImage'),jobCon
 router.delete('/remove-job/:jid',jwtMiddleware,jobController.removeJob)
 
 // update profile 
-router.put('/edit-profile',jwtMiddleware,multerConfig.single('profileImage'),userController.editUser)
+router.put('/edit-profile',jwtMiddleware,multerConfig.single("profileImage"),userController.editUser)
 
 // node-mailer setup 
 router.post('/send-email',emailsController.sendEmail)
